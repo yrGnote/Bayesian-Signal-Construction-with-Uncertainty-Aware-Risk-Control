@@ -28,7 +28,6 @@ bayesian_signal_risk_control/
 ├── backtest.py
 ├── metrics.py
 ├── plots.py
-├── research_notebook_template.ipynb
 └── test_smoke.py
 ```
 
