@@ -1,0 +1,29 @@
+ticker: "SPY"
+start_date: "2015-01-01"
+end_date: "2025-01-01"
+
+features:
+  return_lags: 5
+  volatility_window: 20
+  momentum_windows: [5, 20, 60]
+
+model:
+  train_window: 504
+  ridge_alpha: 10.0
+  noise_variance_floor: 1.0e-8
+
+signal:
+  long_threshold: 0.55
+  short_threshold: 0.45
+  max_position: 1.0
+
+risk:
+  n_simulations: 5000
+  var_level: 0.05
+  target_daily_var: 0.015
+  min_position_scale: 0.1
+  max_position_scale: 1.0
+
+backtest:
+  transaction_cost_bps: 2.0
+  annualization: 252
