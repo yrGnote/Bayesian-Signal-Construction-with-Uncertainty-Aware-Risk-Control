@@ -8,7 +8,7 @@ This project implements a compact quant research pipeline:
 4. Use Monte Carlo simulation to estimate tail risk and risk-aware position size.
 5. Backtest the strategy and evaluate Sharpe ratio, drawdown, turnover, and cumulative return.
 
-The goal is not to maximize historical performance, but to demonstrate a clean research workflow:
+Here is a clean research workflow:
 
 **model → uncertainty → signal → risk control → backtest → evaluation**
 
@@ -20,21 +20,16 @@ bayesian_signal_risk_control/
 ├── requirements.txt
 ├── config.yaml
 ├── run_pipeline.py
-├── src/
-│   ├── data.py
-│   ├── features.py
-│   ├── bayesian_model.py
-│   ├── signals.py
-│   ├── risk.py
-│   ├── backtest.py
-│   ├── metrics.py
-│   └── plots.py
-├── notebooks/
-│   └── research_notebook_template.ipynb
-├── data/
-├── results/
-└── tests/
-    └── test_smoke.py
+├── data.py
+├── features.py
+├── bayesian_model.py
+├── signals.py
+├── risk.py
+├── backtest.py
+├── metrics.py
+├── plots.py
+├── research_notebook_template.ipynb
+└── test_smoke.py
 ```
 
 ## Methodology
